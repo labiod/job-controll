@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script type="text/javascript" src="index.js" >
+    </script>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  </head>
+  <body>
+    <h1>Job controll</h1>
+    <h2>App check how long you works without break</h2>
+
+    <button onclick="start(event)">Start</button>
+    <button id="stop_button" onclick="pause(event)">Pause</button>
+    <button id="stop_button" onclick="stop(event)">Stop</button>
+    <div class="timer_block">
+      <span id="minute_block">0</span>
+      <span id="second_block">0</span>
+    </div>
+    <button id="notify_button" onclick="sendNotification()">Test notification</button>
+    <footer>
+      <h4 class="tooltip">About program ?
+        <span class="tooltiptext">
+        We are using node <script>document.write(process.versions.node)</script>,</br>
+        Chrome <script>document.write(process.versions.chrome)</script>,</br>
+        and Electron <script>document.write(process.versions.electron)</script>.</span>
+      </h4>
+    </footer>
+  </body>
+</html>
